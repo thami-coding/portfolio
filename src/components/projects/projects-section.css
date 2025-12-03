@@ -1,0 +1,11 @@
+.projects {
+  background-color: #2a2a2a;
+  padding-bottom: 2rem;
+}
+
+
+@media (min-width: 800px) {
+  .container {
+    grid-template-columns: repeat(3, minmax(170px, 1fr));
+  }
+}

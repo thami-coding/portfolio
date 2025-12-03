@@ -1,0 +1,9 @@
+.header {
+text-align: center;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  /* border: 1px solid blue; */
+  padding-top: 3rem;
+}

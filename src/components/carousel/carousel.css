@@ -1,0 +1,43 @@
+.embla {
+    overflow: hidden;
+    max-width: 440px;
+    margin: 0 auto;
+   
+  }
+
+  .embla__container {
+    display: flex;
+    max-width: 450px;
+  }
+
+  .embla__slide {
+    flex: 0 0 100%;
+    min-width: 0;
+  }
+  
+
+  /* my css */
+  .hero-image {
+    display: flex;
+    width: 100%;
+    height:100%;
+
+  }
+
+  .embla__slide h2 {
+    text-align: center;
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+  }
+  
+
+  @media (min-width:800px) {
+    .embla__slide h2 {
+     display: none;
+    }
+    .embla__container {
+      display: flex;
+      max-width:500px;
+    }
+  }
