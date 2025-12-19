@@ -1,4 +1,3 @@
-import { TbWorld } from "react-icons/tb";
 import "./project-card.css";
 import { useRef } from "react";
 
