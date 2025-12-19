@@ -3,7 +3,7 @@ import { LiaCopyright } from "react-icons/lia";
 function footer() {
   return (
     <div className="footer">
-      <LiaCopyright /> <p> 2025 all rights reserved</p>
+      <LiaCopyright /> <p> {new Date().getFullYear()} all rights reserved</p>
       
     </div>
   );
