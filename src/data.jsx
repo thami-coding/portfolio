@@ -1,16 +1,13 @@
 import { FaReact } from "react-icons/fa";
-import { SiAngular } from "react-icons/si";
+import { SiAngular, SiVitest } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
 import { SiTypescript } from "react-icons/si";
-import { FaFlutter } from "react-icons/fa6";
 import { SiJetpackcompose } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
-// import { FaBootstrap } from "react-icons/fa";
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import { SiCypress } from "react-icons/si";
-// import { SiVite } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 import { SiMongodb } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
@@ -22,25 +19,15 @@ import { SiApachejmeter } from "react-icons/si";
 import { SiJunit5 } from "react-icons/si";
 import { SiExpress } from "react-icons/si";
 import { SiRedux } from "react-icons/si";
-// import { SiReactquery } from "react-icons/si";
-// import { SiShadcnui } from "react-icons/si";
-// import { SiMui } from "react-icons/si";
-// import { SiReactrouter } from "react-icons/si";
-import { FaLaravel } from "react-icons/fa";
-import { FaPhp } from "react-icons/fa";
-// import { FaWordpress } from "react-icons/fa";
+import { SiReactquery } from "react-icons/si";
 import { SiSelenium } from "react-icons/si";
 import { SiCucumber } from "react-icons/si";
-// import { FaFigma } from "react-icons/fa";
-import { SiRedis } from "react-icons/si";
-
+// import { SiRedis } from "react-icons/si";
 import { IoIosContact } from "react-icons/io";
 import { FaHome } from "react-icons/fa";
 import { IoRocket } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import { FaTools } from "react-icons/fa";
-import { IoLogoFirebase } from "react-icons/io5";
-
 import { SiGithub } from "react-icons/si";
 import { RiNodejsLine } from "react-icons/ri";
 import { SiTestinglibrary } from "react-icons/si";
@@ -50,58 +37,51 @@ import { SiJest } from "react-icons/si";
 // levels :Beginner, Basic, Learning,pre-intermediate, Intermediate, Proficient, Master
 
 export const mobile = [
-  { id: uuidv4(), name: "flutter", icon: <FaFlutter />, level: "Beginner" },
-  {
-    id: uuidv4(),
-    name: "React Native",
-    icon: <FaReact />,
-    level: "intermediate",
-  },
-  {
-    id: uuidv4(),
-    name: "Firebase",
-    icon: <IoLogoFirebase />,
-    level: "Beginner",
-  },
   {
     id: uuidv4(),
     name: "Jetpack Compose",
     icon: <SiJetpackcompose />,
-    level: "Beginner",
+    level: "Jetpack Compose",
   },
 ];
 
 export const frontend = [
-  { id: uuidv4(), name: "HTML5", icon: <FaHtml5 />, level: "intermediate" },
-  { id: uuidv4(), name: "CSS3", icon: <FaCss3 />, level: "intermediate" },
-  {
-    id: uuidv4(),
-    name: "Tailwind",
-    icon: <RiTailwindCssFill />,
-    level: "intermediate",
-  },
-
+  { id: uuidv4(), name: "HTML5", icon: <FaHtml5 />, level: "HTML5" },
+  { id: uuidv4(), name: "CSS3", icon: <FaCss3 />, level: "CSS" },
   {
     id: uuidv4(),
     name: "Javascript",
     icon: <IoLogoJavascript />,
-    level: "intermediate",
+    level: "Javascript",
   },
   {
     id: uuidv4(),
     name: "TypeScript",
     icon: <SiTypescript />,
-    level: "intermediate",
+    level: "TypeScript",
   },
-  { id: uuidv4(), name: "React", icon: <FaReact />, level: "intermediate" },
-  { id: uuidv4(), name: "Redux", icon: <SiRedux />, level: "intermediate" },
+  { id: uuidv4(), name: "React", icon: <FaReact />, level: "React" },
+  { id: uuidv4(), name: "Angular", icon: <SiAngular />, level: "Angular" },
   {
     id: uuidv4(),
     name: "Nextjs",
     icon: <RiNextjsFill />,
-    level: "intermediate",
+    level: "Nextjs",
   },
-  { id: uuidv4(), name: "Angular", icon: <SiAngular />, level: "Basics" },
+  { id: uuidv4(), name: "Redux", icon: <SiRedux />, level: "Redux" },
+  {
+    id: uuidv4(),
+    name: "Tailwind",
+    icon: <RiTailwindCssFill />,
+    level: "Tailwind CSS",
+  },
+  {
+    id: uuidv4(),
+    name: "React Query",
+    icon: <SiReactquery />,
+    level: "React Query",
+  },
+
 ];
 
 export const backend = [
@@ -110,60 +90,51 @@ export const backend = [
     name: "Java + Springboot",
     icon: <FaJava />,
     framework: <SiSpringboot />,
-    level: "Beginner",
-  },
-  {
-    id: uuidv4(),
-    name: "Php + Laravel",
-    icon: <FaPhp />,
-    framework: <FaLaravel />,
-    level: "Basics",
+    level: "Spring Boot",
   },
   {
     id: uuidv4(),
     name: "Node + Express",
     icon: <FaNodeJs />,
     framework: <SiExpress />,
-    level: "intermediate",
+    level: "Express",
   },
   {
     id: uuidv4(),
     name: "C# + ASP.NET",
     icon: "C#",
-    framework: "",
-    level: "Basics",
+    level: "ASP.NET",
   },
   {
     id: uuidv4(),
-    name: "Python + Data Science",
+    name: "Python",
     icon: <FaPython />,
-    framework: null,
-    level: "Learning",
+    level: "Python",
   },
   {
     id: uuidv4(),
     name: "Mongodb",
     icon: <SiMongodb />,
-    level: "Basics",
+    level: "Mongodb",
   },
   {
     id: uuidv4(),
     name: "Postgresql",
     icon: <BiLogoPostgresql />,
-    level: "Basics",
+    level: "Postgresql",
   },
-  { id: uuidv4(), name: "GraphQl", icon: <GrGraphQl />, level: "Basics" },
-  { id: uuidv4(), name: "Redis", icon: <SiRedis />, level: "Basics" },
+  { id: uuidv4(), name: "GraphQl", icon: <GrGraphQl />, level: "GraphQl" },
 ];
 
 export const testing = [
-  { id: uuidv4(), name: "Selenium", icon: <SiSelenium />, level: "Beginner" },
-  { id: uuidv4(), name: "Junit5", icon: <SiJunit5 />, level: "Beginner" },
-  { id: uuidv4(), name: "Selenium", icon: <SiSelenium />, level: "Beginner" },
-  { id: uuidv4(), name: "Cypress", icon: <SiCypress />, level: "Beginner" },
-  { id: uuidv4(), name: "Jmeter", icon: <SiApachejmeter />, level: "Beginner" },
-  { id: uuidv4(), name: "Cucumber", icon: <SiCucumber />, level: "Beginner" },
-  // { id: uuidv4(), name: "Cucumber", icon: <SiVite />, level: "Beginner" },
+  { id: uuidv4(), name: "Selenium", icon: <SiSelenium />, level: "Selenium" },
+  { id: uuidv4(), name: "Junit5", icon: <SiJunit5 />, level: "Junit5" },
+  { id: uuidv4(), name: "Cypress", icon: <SiCypress />, level: "Cypress" },
+  { id: uuidv4(), name: "Jmeter", icon: <SiApachejmeter />, level: "Jmeter" },
+  { id: uuidv4(), name: "Cucumber", icon: <SiCucumber />, level: "Cucumber" },
+  { id: uuidv4(), name: "Cucumber", icon: <SiJest />, level: "Jest" },
+  { id: uuidv4(), name: "Cucumber", icon: <SiVitest />, level: "Vite Tests" },
+  { id: uuidv4(), name: "Cucumber", icon: "X", level: "xUnit" },
 ];
 export const allSkills = { frontend, backend, testing, mobile };
 export const projects = [
