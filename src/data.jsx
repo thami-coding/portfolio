@@ -132,7 +132,7 @@ export const testing = [
   // { id: uuidv4(), name: "Selenium", icon: <SiSelenium />, level: "Selenium" },
   { id: uuidv4(), name: "Junit5", icon: <SiJunit5 />, level: "Junit5" },
   // { id: uuidv4(), name: "Cypress", icon: <SiCypress />, level: "Cypress" },
-  { id: uuidv4(), name: "Jmeter", icon: <SiApachejmeter />, level: "Jmeter" },
+  // { id: uuidv4(), name: "Jmeter", icon: <SiApachejmeter />, level: "Jmeter" },
   // { id: uuidv4(), name: "Cucumber", icon: <SiCucumber />, level: "Cucumber" },
   { id: uuidv4(), name: "jest", icon: <SiJest />, level: "Jest" },
   { id: uuidv4(), name: "viteTests", icon: <SiVitest />, level: "Vite Tests" },
