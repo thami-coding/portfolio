@@ -1,5 +1,5 @@
 import { FaReact } from "react-icons/fa";
-import { SiAngular, SiVitest } from "react-icons/si";
+import { SiAngular, SiFastapi, SiPostgresql, SiPrisma, SiReact, SiVitest } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
 import { SiTypescript } from "react-icons/si";
 import { SiJetpackcompose } from "react-icons/si";
@@ -20,8 +20,8 @@ import { SiJunit5 } from "react-icons/si";
 import { SiExpress } from "react-icons/si";
 import { SiRedux } from "react-icons/si";
 import { SiReactquery } from "react-icons/si";
-import { SiSelenium } from "react-icons/si";
-import { SiCucumber } from "react-icons/si";
+// import { SiSelenium } from "react-icons/si";
+// import { SiCucumber } from "react-icons/si";
 // import { SiRedis } from "react-icons/si";
 import { IoIosContact } from "react-icons/io";
 import { FaHome } from "react-icons/fa";
@@ -31,6 +31,7 @@ import { FaTools } from "react-icons/fa";
 import { SiGithub } from "react-icons/si";
 import { RiNodejsLine } from "react-icons/ri";
 import { SiTestinglibrary } from "react-icons/si";
+
 import { v4 as uuidv4 } from "uuid";
 import { SiJest } from "react-icons/si";
 
@@ -109,7 +110,8 @@ export const backend = [
     id: uuidv4(),
     name: "Python",
     icon: <FaPython />,
-    level: "Python",
+    framework: <SiFastapi />,
+    level: "FastAPI",
   },
   {
     id: uuidv4(),
@@ -127,77 +129,49 @@ export const backend = [
 ];
 
 export const testing = [
-  { id: uuidv4(), name: "Selenium", icon: <SiSelenium />, level: "Selenium" },
+  // { id: uuidv4(), name: "Selenium", icon: <SiSelenium />, level: "Selenium" },
   { id: uuidv4(), name: "Junit5", icon: <SiJunit5 />, level: "Junit5" },
-  { id: uuidv4(), name: "Cypress", icon: <SiCypress />, level: "Cypress" },
+  // { id: uuidv4(), name: "Cypress", icon: <SiCypress />, level: "Cypress" },
   { id: uuidv4(), name: "Jmeter", icon: <SiApachejmeter />, level: "Jmeter" },
-  { id: uuidv4(), name: "Cucumber", icon: <SiCucumber />, level: "Cucumber" },
-  { id: uuidv4(), name: "Cucumber", icon: <SiJest />, level: "Jest" },
-  { id: uuidv4(), name: "Cucumber", icon: <SiVitest />, level: "Vite Tests" },
-  { id: uuidv4(), name: "Cucumber", icon: "X", level: "xUnit" },
+  // { id: uuidv4(), name: "Cucumber", icon: <SiCucumber />, level: "Cucumber" },
+  { id: uuidv4(), name: "jest", icon: <SiJest />, level: "Jest" },
+  { id: uuidv4(), name: "viteTests", icon: <SiVitest />, level: "Vite Tests" },
+  { id: uuidv4(), name: "xUnit", icon: "X", level: "xUnit" },
 ];
 export const allSkills = { frontend, backend, testing, mobile };
 export const projects = [
   {
     id: uuidv4(),
-    name: "e-commerce app",
+    name: "food Ordering",
+    desc: "A simple food ordering app",
+    features: [
+      "User Login",
+      "Cart Management",
+      "Online Payments",
+      "Address Management",
+      "Offers & Discounts",
+      "Create your own burger"
+    ],
     stack: {
-      github: <SiGithub />,
-      rtl: <SiTestinglibrary />,
-      jest: <SiJest />,
-      mern: <RiNodejsLine />,
-    },
+      icons: [<RiNodejsLine />, <SiExpress />, <SiReact />, <SiPostgresql />]
+    }
   },
   {
     id: uuidv4(),
-    name: "e-commerce app",
+    name: "Clothing Shop",
+    desc: "A simple clothing ecommerce app",
+    features: [
+      "User Login",
+      "Cart Management",
+      "Online Payments",
+      "Dashboard",
+      "Inventory Management",
+    ],
     stack: {
-      "source code": <SiGithub />,
-      rtl: <SiTestinglibrary />,
-      jest: <SiJest />,
-      "mern stack": <RiNodejsLine />,
-    },
+      icons: [<RiNextjsFill />]
+    }
   },
-  {
-    id: uuidv4(),
-    name: "e-commerce app",
-    stack: {
-      "source code": <SiGithub />,
-      rtl: <SiTestinglibrary />,
-      jest: <SiJest />,
-      "mern stack": <RiNodejsLine />,
-    },
-  },
-  {
-    id: uuidv4(),
-    name: "e-commerce app",
-    stack: {
-      "source code": <SiGithub />,
-      rtl: <SiTestinglibrary />,
-      jest: <SiJest />,
-      "mern stack": <RiNodejsLine />,
-    },
-  },
-  {
-    id: uuidv4(),
-    name: "e-commerce app",
-    stack: {
-      "source code": <SiGithub />,
-      rtl: <SiTestinglibrary />,
-      jest: <SiJest />,
-      "mern stack": <RiNodejsLine />,
-    },
-  },
-  {
-    id: uuidv4(),
-    name: "e-commerce app",
-    stack: {
-      "source code": <SiGithub />,
-      rtl: <SiTestinglibrary />,
-      jest: "??",
-      "mern stack": <RiNodejsLine />,
-    },
-  },
+
 ];
 
 export const navlinks = [
