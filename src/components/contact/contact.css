@@ -7,11 +7,12 @@ input:-webkit-autofill:active {
   /* color: #ada7a7 !important; */
 }
 
-.form{
+.form {
   /* border: 2px solid red; */
-  padding: 0  2.5rem;
+  padding: 0 2.5rem;
   margin-bottom: 2.5rem;
 }
+
 .contact-bg-screen {
   display: none;
 }
@@ -72,6 +73,7 @@ input:-webkit-autofill:active {
   min-height: 77px;
   /* border: 1px solid red; */
 }
+
 .form-control .input {
   background-color: transparent;
   border-left: none;
@@ -82,6 +84,7 @@ input:-webkit-autofill:active {
   text-align: center;
   color: #ada7a7;
 }
+
 .form-control .invalid-text {
   border-bottom: 1px solid rgb(252, 122, 122);
 }
@@ -90,11 +93,15 @@ input:-webkit-autofill:active {
   border-bottom: 1px solid #38bdf8;
 }
 
+.link {
+  all: unset;
+}
+
 .form-control .text-area {
   background: transparent;
   color: #ada7a7;
   outline: none;
-  height:9rem;
+  height: 9rem;
   border: 1px solid #ada7a7;
   text-align: left;
   padding: 0.5rem;
@@ -103,7 +110,7 @@ input:-webkit-autofill:active {
   /* border: 1px solid red; */
 }
 
-.form-control .text-area:focus{
+.form-control .text-area:focus {
   border: 1px solid #38bdf8;
 }
 
@@ -121,7 +128,7 @@ input:-webkit-autofill:active {
   outline: none;
   color: #fff;
   border: none;
-  padding:0.8rem 1.6rem;
+  padding: 0.8rem 1.6rem;
   border-radius: 4px;
   text-transform: uppercase;
   cursor: pointer;
@@ -129,6 +136,7 @@ input:-webkit-autofill:active {
   margin-top: 1rem;
   background: #38bdf8;
 }
+
 .submit-btn:active {
   transform: scale(0.95);
 }
@@ -140,12 +148,14 @@ input:-webkit-autofill:active {
   margin: 0 auto;
   margin-top: 1.5rem;
 }
+
 .contact-icon {
   margin-right: 1rem;
   font-size: 1.5rem;
   cursor: pointer;
   transition: 0.4s color;
 }
+
 .contact-icon:hover {
   color: #38bdf8;
 }

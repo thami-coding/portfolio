@@ -13,12 +13,11 @@ function hero() {
           solutions.
         </p>
         <div className="hero-buttons">
-          <a type="button" href="" className="download-btn">download cv</a>
-          <a type="button" href="#projects" className="cv-btn">View projects</a>
+          <a type="button" href="/thamsanqa_gumede.pdf" target="_blank" rel="noopener noreferrer" className="cv-btn">  download cv</a>
+          <a type="button" href="#projects" className="download-btn">View projects</a>
         </div>
       </div> 
       <EmblaCarousel />
-          <a  href="#projects" className="hero-sm-button">Download Cv</a>
     </section>
   );
 }
