@@ -31,12 +31,12 @@ function Navbar() {
     }
   };
 
-  const themeIcon =
-    theme === "dark" ? (
-      <MdOutlineWbSunny className="icon" />
-    ) : (
-      <FaMoon className="icon" />
-    );
+  // const themeIcon =
+  //   theme === "dark" ? (
+  //     <MdOutlineWbSunny className="icon" />
+  //   ) : (
+  //     <FaMoon className="icon" />
+  //   );
 
   return (
     <>
@@ -56,12 +56,12 @@ function Navbar() {
           activeLinkId={activeLinkId}
           navLinksTexts={navLinksTexts}
         />
-        <button
+        {/* <button
           className="theme-btn"
           onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
         >
           {themeIcon}
-        </button>
+        </button> */}
       </nav>
       <Drawer isDrawerOpen={isDrawerOpen} setIsDrawerOpen={setIsDrawerOpen} />
     </>
