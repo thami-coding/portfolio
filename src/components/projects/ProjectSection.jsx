@@ -6,7 +6,7 @@ import Project from "../project/Project";
 
 function ProjectSection() {
   const projects = data.map((project) => {
-    return <Project key={project.id} projectInfo={project} />;
+    return <Project key={project.id} {...project} />;
   });
 
   return (
