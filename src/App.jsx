@@ -6,6 +6,7 @@ import ContactSection from "./components/contact/ContactSection";
 import ProjectsSection from "./components/projects/ProjectSection";
 import SkillsSection from "./components/skills/SkillsSection";
 import AOS from "aos";
+import Accordion from "./components/Accordion/Accordion";
 
 AOS.init({
   delay: 100
@@ -13,16 +14,17 @@ AOS.init({
 function App() {
   return (
     <main >
-        <Navbar />
+      <Navbar />
       <div className="app-container">
-      <Hero />
-     <AboutSection />
-       <SkillsSection />
-      <ProjectsSection />
-      <ContactSection />
-      <Footer />
+        <Hero />
+        <AboutSection />
+        <SkillsSection />
+        <ProjectsSection />
+        <Accordion />
+        <ContactSection />
+        <Footer />
       </div>
-      
+
     </main>
   );
 }

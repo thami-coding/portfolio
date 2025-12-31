@@ -17,10 +17,9 @@ function AboutSection() {
             <div className="underline"></div>
           </header>
             <p>
-              My journey in tech began in 2022, and since then, I’ve developed a
+              My journey in tech began at WthinkCode_, and since then, I’ve developed a
               strong foundation in both front-end and back-end technologies. I
-              thrive on the challenge of transforming complex problems into
-              seamless user experiences.
+              thrive on the challenge of learning new technologies.
             </p>
             <p className="second-paragraph">
               Whether it’s designing a responsive layout or building robust
