@@ -43,7 +43,7 @@ export default function Accordion() {
   };
 
   return (
-    <div>
+    <div data-aos="zoom-in">
       <Title title="FAQ ABOUT ME" />
       <div className={styles.accordion}>
         {faqData.map((item, index) => (
