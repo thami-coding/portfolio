@@ -8,7 +8,16 @@ function Drawer({ isDrawerOpen, setIsDrawerOpen }) {
 
   const link = (text) => text.charAt(0).toUpperCase() + text.slice(1);
   const activatedId = (id) => (id === activeId ? "active" : "");
-  const isDrawerActive =  `drawer  ${isDrawerOpen ? "open" : ""}`;
+  const isDrawerActive = `drawer  ${isDrawerOpen ? "open" : ""}`;
+  const handleClick = (e) => {
+    console.log("clicked");
+    console.log(e.currentTarget === e.target);
+
+    if (e.currentTarget === e.target) {
+      setIsDrawerOpen(false)
+    }
+
+  }
 
   const links = navlinks.map((navlink) => {
     const { id, text, icon } = navlink;
@@ -30,12 +39,14 @@ function Drawer({ isDrawerOpen, setIsDrawerOpen }) {
   });
 
   return (
-    <div className={isDrawerActive}>
-      <button onClick={() => setIsDrawerOpen(false)} className="close-btn">
-        <IoMdArrowBack />
-      </button>
-      <Profile />
-      <ul className="drawer-spacing drawer-links">{links}</ul>
+    <div className={isDrawerOpen && "overlay"} onClick={handleClick}>
+      <div className={isDrawerActive} >
+        <button onClick={() => setIsDrawerOpen(false)} className="close-btn">
+          <IoMdArrowBack />
+        </button>
+        <Profile />
+        <ul className="drawer-spacing drawer-links">{links}</ul>
+      </div>
     </div>
   );
 }

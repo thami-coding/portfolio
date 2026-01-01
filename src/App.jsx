@@ -7,14 +7,18 @@ import ProjectsSection from "./components/projects/ProjectSection";
 import SkillsSection from "./components/skills/SkillsSection";
 import AOS from "aos";
 import Accordion from "./components/Accordion/Accordion";
+import { useState } from "react";
 
 AOS.init({
   delay: 100
 });
 function App() {
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
   return (
     <main >
-      <Navbar />
+      <Navbar isDrawerOpen={isDrawerOpen}
+        setIsDrawerOpen={setIsDrawerOpen} />
       <div className="app-container">
         <Hero />
         <AboutSection />

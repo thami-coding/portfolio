@@ -9,10 +9,9 @@ import Logo from "./Logo";
 import Drawer from "./Drawer";
 import "./navbar.css";
 
-function Navbar() {
+function Navbar({ isDrawerOpen, setIsDrawerOpen }) {
   const [theme, setTheme] = useState("dark");
   const [scrolled, setScrolled] = useState(false);
-  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [activeLinkId, setActiveLinkId] = useState("");
   const { id: homeId } = navLinksTexts[0];
 
@@ -31,6 +30,7 @@ function Navbar() {
     }
   };
 
+
   // const themeIcon =
   //   theme === "dark" ? (
   //     <MdOutlineWbSunny className="icon" />
@@ -48,7 +48,7 @@ function Navbar() {
           <RxHamburgerMenu className="mobile-icon-nav" />
         </button>
         <Logo setActiveLinkId={setActiveLinkId} homeId={homeId} />
-        <a href="#">
+        <a href="https://github.com/thami-coding">
           <FaGithub className="sm-nav-icon mobile-icon-nav" />
         </a>
         <NavLinks

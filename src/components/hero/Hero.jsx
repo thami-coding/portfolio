@@ -1,7 +1,9 @@
 import "./hero.css";
-import {EmblaCarousel} from '../carousel/Carousel'
+import { EmblaCarousel } from '../carousel/Carousel'
 
 function hero() {
+ 
+
   return (
     <section className="hero" id="home">
       <div className="hero-container">
@@ -16,7 +18,7 @@ function hero() {
           <a type="button" href="/GumedeThamsanqaResume.pdf" target="_blank" rel="noopener noreferrer" className="cv-btn">  download cv</a>
           <a type="button" href="#projects" className="download-btn">View projects</a>
         </div>
-      </div> 
+      </div>
       <EmblaCarousel />
     </section>
   );

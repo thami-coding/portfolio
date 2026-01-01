@@ -12,6 +12,8 @@
   font-weight: 600;
   letter-spacing: 1.5px;
 }
+
+
 .hero-buttons,
 .text,
 .hero-container h2 {
@@ -72,10 +74,6 @@
     position: relative;
     overflow: hidden;
   }
-  
- 
-  
-  
 
   .hero-buttons a::before {
     content: "";
@@ -96,10 +94,6 @@
   .hero-buttons .download-btn::before {
     bottom: 0;
     border-radius: 50% 50% 0 0;
-  }
-
-  .hero-buttons .cv-btn::before,
-  .hero-buttons .download-btn::before {
     height: 180%;
   }
 
