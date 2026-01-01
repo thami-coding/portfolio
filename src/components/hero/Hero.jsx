@@ -13,7 +13,7 @@ function hero() {
           solutions.
         </p>
         <div className="hero-buttons">
-          <a type="button" href="/thamsanqa_gumede.pdf" target="_blank" rel="noopener noreferrer" className="cv-btn">  download cv</a>
+          <a type="button" href="/GumedeThamsanqaResume.pdf" target="_blank" rel="noopener noreferrer" className="cv-btn">  download cv</a>
           <a type="button" href="#projects" className="download-btn">View projects</a>
         </div>
       </div> 
