@@ -8,8 +8,8 @@ function AboutSection() {
     <section   className="about-container" id="about" >
       <Title title="About Me" />
       <div className="about"  data-aos="zoom-in">
-        <div className="left-section" >
-          <img src={aboutImage} alt="about image" />
+        <div className="left-section about-img-container" >
+          <img src={aboutImage} className="about-img" alt="about image" />
         </div>
           <div className="about-text">
           <header className="title-container">

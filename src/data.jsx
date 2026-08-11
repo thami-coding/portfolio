@@ -1,5 +1,13 @@
 import { FaReact } from "react-icons/fa";
-import { SiAngular, SiFastapi, SiPostgresql, SiPrisma, SiReact, SiVitest } from "react-icons/si";
+import {
+  SiAngular,
+  SiFastapi,
+  SiPostgresql,
+  SiPrisma,
+  SiPython,
+  SiReact,
+  SiVitest,
+} from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
 import { SiTypescript } from "react-icons/si";
 import { SiJetpackcompose } from "react-icons/si";
@@ -31,11 +39,14 @@ import { FaTools } from "react-icons/fa";
 import { SiGithub } from "react-icons/si";
 import { RiNodejsLine } from "react-icons/ri";
 import { SiTestinglibrary } from "react-icons/si";
-
+import { TbBrandSupabase } from "react-icons/tb";
 import { v4 as uuidv4 } from "uuid";
 import { SiJest } from "react-icons/si";
-
+import { TbBrandTypescript } from "react-icons/tb";
+import { SiPydantic } from "react-icons/si";
 // levels :Beginner, Basic, Learning,pre-intermediate, Intermediate, Proficient, Master
+import foodDeliveryImg from "./assets/images/food-deliver-homepage.png";
+import BookingImg from "./assets/images/book-homepage.png";
 
 export const mobile = [
   {
@@ -82,7 +93,6 @@ export const frontend = [
     icon: <SiReactquery />,
     level: "React Query",
   },
-
 ];
 
 export const backend = [
@@ -143,35 +153,46 @@ export const projects = [
   {
     id: uuidv4(),
     name: "food Ordering",
-    desc: "A simple food ordering app",
+    desc: "A simple food ordering website",
+    img: foodDeliveryImg,
+    githubLink:"https://github.com/thami-coding/food-delivery",
+    projectLink:"https://food-delivery-ydng-peach.vercel.app",
     features: [
-      "User Login",
-      "Cart Management",
-      "Online Payments",
-      "Address Management",
-      "Offers & Discounts",
-      "Create your own burger"
+      "Admin dashboard",
+      "Real-time order tracking",
+      "Rate-limited login",
+      "Secure login HTTP-only cookies",
+      "Payment gateway integration",
+      "Live order status updates",
     ],
     stack: {
-      icons: [<RiNodejsLine />, <SiExpress />, <SiReact />, <SiPostgresql />]
-    }
+      icons: [
+        <SiExpress />,
+        <SiReact />,
+        <SiPostgresql />,
+        <TbBrandTypescript />,
+      ],
+    },
   },
   {
     id: uuidv4(),
-    name: "Clothing Shop",
-    desc: "A simple clothing ecommerce app",
+    name: "Spa Booking",
+    desc: "A simple Spa booking website",
+    img: BookingImg,
+    githubLink:"https://github.com/thami-coding/spa-booking",
+    projectLink:"https://spa-booking031.netlify.app/",
     features: [
-      "User Login",
-      "Cart Management",
-      "Online Payments",
-      "Dashboard",
-      "Inventory Management",
+      "Book Appointment",
+      "Appointment Management",
+      "Online Payment",
+      "Admin Dashboard",
+      "Authentication & Security",
+      "Cancel & Reschedule booking",
     ],
     stack: {
-      icons: [<RiNextjsFill />]
-    }
+      icons: [<FaReact />,<SiMongodb />, ,<SiPython />, <SiFastapi />, <SiPydantic />, ],
+    },
   },
-
 ];
 
 export const navlinks = [
