@@ -1,35 +1,35 @@
 import Title from "../title/Title";
-
 import aboutImage from "../../assets/images/about-img.svg";
 import "./about.css";
 
 function AboutSection() {
   return (
-    <section   className="about-container" id="about" >
+    <section className="about-container" id="about">
       <Title title="About Me" />
-      <div className="about"  data-aos="zoom-in">
-        <div className="left-section about-img-container" >
+      <div className="about" data-aos="zoom-in">
+        <div className="left-section about-img-container">
           <img src={aboutImage} className="about-img" alt="about image" />
         </div>
-          <div className="about-text">
+        <div className="about-text">
           <header className="title-container">
             <h2 className="title">Fullstack developer</h2>
             <div className="underline"></div>
           </header>
-            <p>
-              My journey in tech began at WthinkCode_, and since then, I’ve developed a
-              strong foundation in both front-end and back-end technologies. I
-              thrive on the challenge of learning new technologies.
-            </p>
-            <p className="second-paragraph">
-              Whether it’s designing a responsive layout or building robust
-              server-side logic, I enjoy every aspect of the development
-              process. I believe that great software should not only function
-              well but also provide an enjoyable experience for users. Let's
-              collaborate and craft something innovative and impactful.
-            </p>
-          </div>
+          <p>
+            My journey in tech began at WthinkCode_, and since then, I’ve
+            developed a strong foundation in both front-end and back-end
+            technologies. I thrive on the challenge of learning new
+            technologies.
+          </p>
+          <p className="second-paragraph">
+            Whether it’s designing a responsive layout or building robust
+            server-side logic, I enjoy every aspect of the development process.
+            I believe that great software should not only function well but also
+            provide an enjoyable experience for users. Let's collaborate and
+            craft something innovative and impactful.
+          </p>
         </div>
+      </div>
     </section>
   );
 }

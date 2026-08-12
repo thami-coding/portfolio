@@ -4,16 +4,7 @@ import { BiCheck } from "react-icons/bi";
 import { TbWorldCheck } from "react-icons/tb";
 import { FaGithub } from "react-icons/fa";
 
-function Project({
-  name,
-  features,
-  desc,
-  stack,
-  img,
-  githubLink,
-  projectLink,
-  isLive
-}) {
+function Project({ features, stack, img, githubLink, projectLink, isLive }) {
   const videoRef = useRef(null);
   console.log(img);
 
@@ -35,15 +26,17 @@ function Project({
       <div className="project-card-img-container">
         <img src={img} className="project-car-img" />
         <div className="demo">
-       {isLive &&   <a
-            href={projectLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="demo-link"
-          >
-            <TbWorldCheck />
-            <span> Live Demo</span>
-          </a>}
+          {isLive && (
+            <a
+              href={projectLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="demo-link"
+            >
+              <TbWorldCheck />
+              <span> Live Demo</span>
+            </a>
+          )}
           <a
             className="github"
             href={githubLink}

@@ -1,10 +1,9 @@
 .project-card {
   display: flex;
-  margin: 5rem auto;
+  margin: 4rem auto;
   border-radius: 10px;
-  margin-bottom: 4rem;
-  padding: 1rem;
   flex-flow: column;
+  padding: 0 1rem;
 }
 
 .tech-stack {
@@ -13,12 +12,11 @@
 }
 
 .project-text-container {
-  padding-left: 2rem;
   display: flex;
   flex-flow: column;
   align-items: start;
-  /* border: 1px solid red; */
   row-gap: 1rem;
+  margin-top: 1.2rem;
 }
 
 .project-title {
@@ -41,17 +39,19 @@
 }
 
 .project-card-img-container {
-  width: 600px;
+  width: 90%;
+  height: 90%;
 }
+
 .project-car-img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
+
 .project-video {
   border-radius: 10px;
   cursor: pointer;
-  /* temp styles */
   max-width: 24rem;
   min-width: 20rem;
   margin: 0 auto;
@@ -86,15 +86,14 @@
 .demo {
   display: flex;
   align-items: center;
-  column-gap: 20px;
-
-  margin-top: -0.5rem;
+  column-gap: 1.2rem;
+  margin-top: 1.2rem;
 }
 
 .demo-link {
   all: unset;
   display: flex;
-  column-gap: 5px;
+  column-gap: 10px;
   color: rgb(69, 221, 213);
   cursor: pointer;
 }
@@ -102,6 +101,7 @@
 .github {
   color: white;
 }
+
 @media (min-width: 471px) {
   .project-card {
     max-width: 30rem;
@@ -109,6 +109,11 @@
 }
 
 @media (min-width: 900px) {
+  .project-card-img-container {
+    width: 60%;
+    height: 90%;
+  }
+
   .project-card {
     flex-flow: row;
     max-width: 62rem;
@@ -123,7 +128,12 @@
     max-width: 35rem;
     height: 100%;
   }
+
   .project-video-container {
     width: 50%;
+  }
+
+  .project-text-container {
+    margin-top: 0px;
   }
 }

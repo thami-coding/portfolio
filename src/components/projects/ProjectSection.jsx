@@ -1,5 +1,4 @@
 import Title from "../title/Title";
-
 import "./projects-section.css";
 import { projects as data } from "../../data";
 import Project from "../project/Project";

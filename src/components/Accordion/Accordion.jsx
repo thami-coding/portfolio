@@ -1,37 +1,32 @@
 import { useState } from "react";
 import styles from "./Accordion.module.css";
-import Title from "../title/Title"
+import Title from "../title/Title";
 import { IoMdMegaphone } from "react-icons/io";
+
 const faqData = [
   {
     question: "What is your full name?",
-    answer:
-      "Thamsanqa"
+    answer: "Thamsanqa",
   },
   {
     question: "What is your favourite series?",
-    answer:
-      "The Mentalist!"
+    answer: "The Mentalist!",
   },
   {
     question: "Which football team do you support?",
-    answer:
-      "CHELSEAAAAAA!!!!"
+    answer: "CHELSEAAAAAA!!!!",
   },
   {
     question: "First Algorithm you learned?",
-    answer:
-      "Binary Search"
+    answer: "Binary Search",
   },
   {
     question: "Where are you from?",
-    answer:
-      "KZN Durban"
+    answer: "KZN Durban",
   },
   {
     question: "Which type of music do you like?",
-    answer:
-      "Good Music!"
+    answer: "Good Music!",
   },
 ];
 
@@ -49,8 +44,9 @@ export default function Accordion() {
         {faqData.map((item, index) => (
           <div key={index} className={styles.item}>
             <button
-              className={`${styles.header} ${activeIndex === index && styles.active
-                }`}
+              className={`${styles.header} ${
+                activeIndex === index && styles.active
+              }`}
               onClick={() => toggleAccordion(index)}
             >
               {item.question}
@@ -62,7 +58,13 @@ export default function Accordion() {
             <div
               className={`${styles.content} ${activeIndex === index && styles.open}`}
             >
-              <p className={styles.text}> {item.answer === "CHELSEAAAAAA!!!!" && <IoMdMegaphone size={25} />} {item.answer}</p>
+              <p className={styles.text}>
+                {" "}
+                {item.answer === "CHELSEAAAAAA!!!!" && (
+                  <IoMdMegaphone size={25} />
+                )}{" "}
+                {item.answer}
+              </p>
             </div>
           </div>
         ))}
