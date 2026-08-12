@@ -1,15 +1,6 @@
 import { FaReact } from "react-icons/fa";
-import {
-  SiAngular,
-  SiFastapi,
-  SiPostgresql,
-  SiPrisma,
-  SiPython,
-  SiReact,
-  SiVitest,
-} from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
-import { SiTypescript } from "react-icons/si";
+import { SiDocker, SiTypescript } from "react-icons/si";
 import { SiJetpackcompose } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { FaHtml5 } from "react-icons/fa";
@@ -36,10 +27,21 @@ import { v4 as uuidv4 } from "uuid";
 import { SiJest } from "react-icons/si";
 import { TbBrandTypescript } from "react-icons/tb";
 import { SiPydantic } from "react-icons/si";
-// levels :Beginner, Basic, Learning,pre-intermediate, Intermediate, Proficient, Master
 import foodDeliveryImg from "./assets/images/food-deliver-homepage.png";
 import BookingImg from "./assets/images/book-homepage.png";
 import ecommerceImg from "./assets/images/e-commerce.png";
+import apartmentsImg from "./assets/images/apartments.png";
+import {
+  SiAngular,
+  SiFastapi,
+  SiPostgresql,
+  SiPrisma,
+  SiPython,
+  SiReact,
+  SiVitest,
+} from "react-icons/si";
+import { SiDotnet } from "react-icons/si";
+import { TbBrandCSharp } from "react-icons/tb";
 
 export const mobile = [
   {
@@ -146,6 +148,7 @@ export const allSkills = { frontend, backend, testing, mobile };
 export const projects = [
   {
     id: uuidv4(),
+    isLive: true,
     name: "food Ordering",
     desc: "A simple food ordering website",
     img: foodDeliveryImg,
@@ -170,6 +173,28 @@ export const projects = [
   },
   {
     id: uuidv4(),
+    isLive: false,
+    name: "Backroom rental",
+    desc: "Backroom rental website",
+    img: apartmentsImg,
+    githubLink: "",
+    projectLink: "",
+    features: [
+      "centralized error handling",
+      "logging",
+      "website containerized",
+      "Authentication & Authorization",
+      "Onion architecture",
+      "Scalar docs",
+      "Railway shut down my deployment",
+    ],
+    stack: {
+      icons: [<SiDotnet />, <TbBrandCSharp />, <SiPostgresql />, <SiDocker />],
+    },
+  },
+  {
+    id: uuidv4(),
+    isLive: true,
     name: "Spa Booking",
     desc: "A simple Spa booking website",
     img: BookingImg,

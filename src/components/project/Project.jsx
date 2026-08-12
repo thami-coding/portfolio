@@ -3,11 +3,19 @@ import { useRef } from "react";
 import { BiCheck } from "react-icons/bi";
 import { TbWorldCheck } from "react-icons/tb";
 import { FaGithub } from "react-icons/fa";
-// import foodDeliveryImg from "../../assets/images/food-deliver-homepage.png";
 
-function Project({ name, features, desc, stack,img,githubLink, projectLink }) {
+function Project({
+  name,
+  features,
+  desc,
+  stack,
+  img,
+  githubLink,
+  projectLink,
+  isLive
+}) {
   const videoRef = useRef(null);
-console.log(img);
+  console.log(img);
 
   const handleMouseEnter = () => {
     if (videoRef.current) {
@@ -27,7 +35,7 @@ console.log(img);
       <div className="project-card-img-container">
         <img src={img} className="project-car-img" />
         <div className="demo">
-          <a
+       {isLive &&   <a
             href={projectLink}
             target="_blank"
             rel="noopener noreferrer"
@@ -35,7 +43,7 @@ console.log(img);
           >
             <TbWorldCheck />
             <span> Live Demo</span>
-          </a>
+          </a>}
           <a
             className="github"
             href={githubLink}
