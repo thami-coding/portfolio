@@ -15,7 +15,6 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
-import { SiCypress } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 import { SiMongodb } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
@@ -23,22 +22,15 @@ import { GrGraphQl } from "react-icons/gr";
 import { SiSpringboot } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 import { FaPython } from "react-icons/fa";
-import { SiApachejmeter } from "react-icons/si";
 import { SiJunit5 } from "react-icons/si";
 import { SiExpress } from "react-icons/si";
 import { SiRedux } from "react-icons/si";
 import { SiReactquery } from "react-icons/si";
-// import { SiSelenium } from "react-icons/si";
-// import { SiCucumber } from "react-icons/si";
-// import { SiRedis } from "react-icons/si";
 import { IoIosContact } from "react-icons/io";
 import { FaHome } from "react-icons/fa";
 import { IoRocket } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import { FaTools } from "react-icons/fa";
-import { SiGithub } from "react-icons/si";
-import { RiNodejsLine } from "react-icons/ri";
-import { SiTestinglibrary } from "react-icons/si";
 import { TbBrandSupabase } from "react-icons/tb";
 import { v4 as uuidv4 } from "uuid";
 import { SiJest } from "react-icons/si";
@@ -47,6 +39,7 @@ import { SiPydantic } from "react-icons/si";
 // levels :Beginner, Basic, Learning,pre-intermediate, Intermediate, Proficient, Master
 import foodDeliveryImg from "./assets/images/food-deliver-homepage.png";
 import BookingImg from "./assets/images/book-homepage.png";
+import ecommerceImg from "./assets/images/e-commerce.png";
 
 export const mobile = [
   {
@@ -148,6 +141,7 @@ export const testing = [
   { id: uuidv4(), name: "viteTests", icon: <SiVitest />, level: "Vite Tests" },
   { id: uuidv4(), name: "xUnit", icon: "X", level: "xUnit" },
 ];
+
 export const allSkills = { frontend, backend, testing, mobile };
 export const projects = [
   {
@@ -155,8 +149,8 @@ export const projects = [
     name: "food Ordering",
     desc: "A simple food ordering website",
     img: foodDeliveryImg,
-    githubLink:"https://github.com/thami-coding/food-delivery",
-    projectLink:"https://food-delivery-ydng-peach.vercel.app",
+    githubLink: "https://github.com/thami-coding/food-delivery",
+    projectLink: "https://food-delivery-ydng-peach.vercel.app",
     features: [
       "Admin dashboard",
       "Real-time order tracking",
@@ -179,8 +173,8 @@ export const projects = [
     name: "Spa Booking",
     desc: "A simple Spa booking website",
     img: BookingImg,
-    githubLink:"https://github.com/thami-coding/spa-booking",
-    projectLink:"https://spa-booking031.netlify.app/",
+    githubLink: "https://github.com/thami-coding/spa-booking",
+    projectLink: "https://spa-booking031.netlify.app/",
     features: [
       "Book Appointment",
       "Appointment Management",
@@ -190,7 +184,33 @@ export const projects = [
       "Cancel & Reschedule booking",
     ],
     stack: {
-      icons: [<FaReact />,<SiMongodb />, ,<SiPython />, <SiFastapi />, <SiPydantic />, ],
+      icons: [
+        <FaReact />,
+        <SiMongodb />,
+        <SiPython />,
+        <SiFastapi />,
+        <SiPydantic />,
+      ],
+    },
+  },
+  {
+    id: uuidv4(),
+    name: "Ecommerce clothing website",
+    desc: "A simple e-commerce clothing website",
+    img: ecommerceImg,
+    githubLink: "",
+    projectLink: "",
+    features: [
+      "Website is Work In Progress...",
+      "Website is under construction!!",
+      // "SSR",
+      // "Search & Filter products",
+      // "Online Payment",
+      // "Admin Dashboard",
+      // "Authentication & Security",
+    ],
+    stack: {
+      icons: [<RiNextjsFill />, <SiPrisma />, <TbBrandSupabase />],
     },
   },
 ];
