@@ -6,7 +6,6 @@ import { FaGithub } from "react-icons/fa";
 
 function Project({ features, stack, img, githubLink, projectLink, isLive }) {
   const videoRef = useRef(null);
-  console.log(img);
 
   const handleMouseEnter = () => {
     if (videoRef.current) {
@@ -53,7 +52,6 @@ function Project({ features, stack, img, githubLink, projectLink, isLive }) {
         <ul className="feature-check">
           {features.map((feature, index) => (
             <li key={index}>
-              {" "}
               <BiCheck /> {feature}
             </li>
           ))}
