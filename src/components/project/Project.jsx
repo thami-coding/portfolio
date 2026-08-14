@@ -1,24 +1,9 @@
 import "./project-card.css";
-import { useRef } from "react";
 import { BiCheck } from "react-icons/bi";
 import { TbWorldCheck } from "react-icons/tb";
 import { FaGithub } from "react-icons/fa";
 
 function Project({ features, stack, img, githubLink, projectLink, isLive }) {
-  const videoRef = useRef(null);
-
-  const handleMouseEnter = () => {
-    if (videoRef.current) {
-      videoRef.current.play();
-    }
-  };
-
-  const handleMouseLeave = () => {
-    if (videoRef.current) {
-      videoRef.current.pause();
-      videoRef.current.currentTime = 0;
-    }
-  };
 
   return (
     <div className="project-card" data-aos="zoom-in">

@@ -161,6 +161,7 @@ export const projects = [
       "Secure login HTTP-only cookies",
       "Payment gateway integration",
       "Live order status updates",
+      "More features are under construction!!",
     ],
     stack: {
       icons: [
@@ -182,11 +183,12 @@ export const projects = [
     features: [
       "centralized error handling",
       "logging",
-      "website containerized",
+      "containerized",
       "Authentication & Authorization",
       "Onion architecture",
       "Scalar docs",
       "Railway shut down my deployment",
+      "More features are under construction!!",
     ],
     stack: {
       icons: [<SiDotnet />, <TbBrandCSharp />, <SiPostgresql />, <SiDocker />],
@@ -207,6 +209,7 @@ export const projects = [
       "Admin Dashboard",
       "Authentication & Security",
       "Cancel & Reschedule booking",
+      "More features are under construction!!",
     ],
     stack: {
       icons: [
@@ -220,19 +223,20 @@ export const projects = [
   },
   {
     id: uuidv4(),
+    isLive: true,
     name: "Ecommerce clothing website",
     desc: "A simple e-commerce clothing website",
     img: ecommerceImg,
-    githubLink: "",
-    projectLink: "",
+    githubLink: "https://github.com/thami-coding/ecommerce-clothing-store",
+    projectLink: "https://ecommerce-clothing-store-nk53.vercel.app",
     features: [
       "Website is Work In Progress...",
-      "Website is under construction!!",
-      // "SSR",
-      // "Search & Filter products",
-      // "Online Payment",
-      // "Admin Dashboard",
-      // "Authentication & Security",
+      "SSR",
+      "Search & Filter products",
+      "Online Payment",
+      "Admin Dashboard",
+      "Authentication & Security",
+      "More features are under construction!!",
     ],
     stack: {
       icons: [<RiNextjsFill />, <SiPrisma />, <TbBrandSupabase />],
